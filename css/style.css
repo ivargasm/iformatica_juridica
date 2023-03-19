@@ -528,7 +528,7 @@ section {
 }
 
 .teams .title::after {
-  content: "Trabajos";
+  content: "Productos";
   position: absolute;
   bottom: -13px;
   left: 50%;
