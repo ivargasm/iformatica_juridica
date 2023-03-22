@@ -328,6 +328,7 @@ section {
   border-radius: 6px;
   padding: 20px 25px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .services .serv-content .card i {
@@ -896,8 +897,8 @@ footer .rsociales ul div.skype:hover {
   border-radius: 50%;
 }
 
-footer .rsociales ul div.link:hover {
-  background: #0077b5;
+footer .rsociales ul div.fb:hover {
+  background: #1e3050;
   border-radius: 50%;
 }
 
