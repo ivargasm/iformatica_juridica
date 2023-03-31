@@ -1,0 +1,152 @@
+[
+    {
+        "id": "alamacenamiento-01",
+        "titulo": "HDD",
+        "imagen": "./img/almacenamiento/01-hdd.png",
+        "categoria": {
+            "nombre": "Almacenamiento",
+            "id": "almacenamiento"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "alamacenamiento-02",
+        "titulo": "USB",
+        "imagen": "./img/almacenamiento/02-usb.png",
+        "categoria": {
+            "nombre": "Almacenamiento",
+            "id": "almacenamiento"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "alamacenamiento-03",
+        "titulo": "SDD",
+        "imagen": "./img/almacenamiento/03-ssd.jpg",
+        "categoria": {
+            "nombre": "Almacenamiento",
+            "id": "almacenamiento"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "alamacenamiento-04",
+        "titulo": "SSD NVe",
+        "imagen": "./img/almacenamiento/04-ssd-nve.jpg",
+        "categoria": {
+            "nombre": "Almacenamiento",
+            "id": "almacenamiento"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "alamacenamiento-05",
+        "titulo": "Tarjeta de memoria",
+        "imagen": "./img/almacenamiento/05-tmemoria.png",
+        "categoria": {
+            "nombre": "Almacenamiento",
+            "id": "almacenamiento"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "teclados-01",
+        "titulo": "Teclado Mecanico",
+        "imagen": "./img/teclados/01.jpg",
+        "categoria": {
+            "nombre": "Teclados",
+            "id": "teclados"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "teclados-02",
+        "titulo": "Teclado Slim",
+        "imagen": "./img/teclados/02.jpg",
+        "categoria": {
+            "nombre": "Teclados",
+            "id": "teclados"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "teclados-03",
+        "titulo": "Teclado Elegante",
+        "imagen": "./img/teclados/03.jpg",
+        "categoria": {
+            "nombre": "Teclados",
+            "id": "teclados"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "teclados-04",
+        "titulo": "Teclado Moderno",
+        "imagen": "./img/teclados/04.jpg",
+        "categoria": {
+            "nombre": "Teclados",
+            "id": "teclados"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "teclados-05",
+        "titulo": "Teclado Retroiluminado",
+        "imagen": "./img/teclados/05.jpg",
+        "categoria": {
+            "nombre": "teclados",
+            "id": "teclados"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "mouse-01",
+        "titulo": "Mouse",
+        "imagen": "./img/mouse/01.jpg",
+        "categoria": {
+            "nombre": "Mouse",
+            "id": "mouse"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "mouse-02",
+        "titulo": "Mouse Alambrico",
+        "imagen": "./img/mouse/02.jpg",
+        "categoria": {
+            "nombre": "Mouse",
+            "id": "mouse"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "mouse-03",
+        "titulo": "Mouse Inalambrico",
+        "imagen": "./img/mouse/03.jpg",
+        "categoria": {
+            "nombre": "Mouse",
+            "id": "mouse"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "mouse-04",
+        "titulo": "Mouse Gamer",
+        "imagen": "./img/mouse/04.jpg",
+        "categoria": {
+            "nombre": "Mouse",
+            "id": "mouse"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "mouse-05",
+        "titulo": "Mouse Blance",
+        "imagen": "./img/mouse/05.jpg",
+        "categoria": {
+            "nombre": "Mouse",
+            "id": "mouse"
+        },
+        "precio": 1000
+    }
+]

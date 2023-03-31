@@ -26,9 +26,7 @@
   border: 0;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: all 0.3s ease-out;
+  box-sizing: border-box;
   transition: all 0.3s ease-out;
   text-decoration: none;
 }
@@ -529,7 +527,7 @@ section {
 }
 
 .teams .title::after {
-  content: "Productos";
+  content: "Testimonios";
   position: absolute;
   bottom: -13px;
   left: 50%;
@@ -541,11 +539,13 @@ section {
           transform: translate(-50%);
 }
 
-.teams .carousel #btn-modal {
+#btn-modal-1,
+#btn-modal-2,
+#btn-modal-3 {
   display: none;
 }
 
-.teams .carousel .modal {
+.modal {
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -566,25 +566,23 @@ section {
   z-index: 999999;
 }
 
-.teams .carousel .modal .contenedor {
-  width: 70%;
-  height: 60vh;
+.modal .contenedor {
+  width: 50%;
+  height: 50vh;
   margin: auto;
   background: #fff;
-  -webkit-box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
-          box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
   position: relative;
-  -webkit-transform: translateY(-30%);
-          transform: translateY(-30%);
+  transform: translateY(-10%);
 }
 
-.teams .carousel .modal .contenedor header {
+.modal .contenedor header {
   background: #111;
   color: #fff;
   padding: 10px;
 }
 
-.teams .carousel .modal .contenedor .cerrar {
+.modal .contenedor .cerrar {
   display: inline-block;
   position: absolute;
   top: 10px;
@@ -594,16 +592,24 @@ section {
   cursor: pointer;
 }
 
-.teams .carousel .modal .contenedor #btn-modal:checked ~ .modal .contenedor {
+.modal .contenedor #btn-modal-1:checked ~ .modal .contenedor,
+.modal .contenedor #btn-modal-2:checked ~ .modal .contenedor,
+.modal .contenedor #btn-modal-3:checked ~ .modal .contenedor {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
 
-.teams .carousel .modal .contenedor .contenido .ver {
+.modal .contenedor .contenido{
+  color: #111
+}
+
+.modal .contenedor .contenido .ver {
   display: none;
 }
 
-.teams .carousel #btn-modal:checked ~ .modal {
+#btn-modal-1:checked ~ .modal,
+#btn-modal-2:checked ~ .modal,
+#btn-modal-3:checked ~ .modal {
   opacity: 1 !important;
   visibility: visible !important;
 }
@@ -1003,6 +1009,11 @@ footer .rsociales ul div.fb:hover {
 }
 
 @media (max-width: 741px) {
+  .modal .contenedor {
+    width: 60%;
+    height: 50vh;
+    transform: translateY(0);
+  }
   footer .rsociales .social {
     margin-left: 10px;
   }
