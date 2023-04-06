@@ -523,6 +523,20 @@ main{
     flex-wrap: wrap;
     row-gap: 1rem;
   }
+
+  .dp .datos{
+    width: 90%;
+  }
+
+  .dp .datos form .acciones{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .modal .contenedor{
+    width: 90%;
+    height: 80%;
+  }
 }
 
 @media screen and (max-width: 400px){
