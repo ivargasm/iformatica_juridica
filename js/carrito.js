@@ -8,6 +8,8 @@ const contenedorCarritoComprado = document.querySelector('.cart-bought')
 const botonVaciar = document.querySelector('#cart-empty-actions')
 const botonComprar = document.querySelector('#cart-buy-actions')
 const contenedorTotal = document.querySelector('#total')
+const contenedorDatosPersonales = document.querySelector('#dp')
+const enviarDP =document.querySelector('#enviar_dp')
 let botonesEliminar = document.querySelectorAll('.cart-product-delete')
 
 function cargarProductosCarrilo(){
@@ -93,7 +95,36 @@ function actualizarTotal(){
 	contenedorTotal.innerHTML = `$${totalCalculado}`
 }
 
-botonComprar.addEventListener('click', comprarCarrito)
+//botonComprar.addEventListener('click', comprarCarrito)
+
+botonComprar.addEventListener('click',datosPersonales)
+
+function datosPersonales(){
+	contenedorDatosPersonales.classList.remove('disabled')
+
+	enviarDP.addEventListener('click', e => {
+		e.preventDefault()
+		const formulario = document.datos_personales
+		const nombre = document.datos_personales.nombre.value.toLowerCase()
+		const correo = document.datos_personales.correo.value.toLowerCase()
+		const direccion = document.datos_personales.direccion.value.toLowerCase()
+		const telefono = document.datos_personales.telefono.value.toLowerCase()
+
+		if(nombre.length>0 && correo.length>0 && direccion.length>0 && telefono.length>0){
+			const dp = {
+				nombre,
+				correo,
+				direccion,
+				telefono
+			}
+
+			GuardadEnStorage('dp',dp,correo)
+			contenedorDatosPersonales.classList.add('disabled')
+			comprarCarrito()
+		}
+
+	})
+}
 
 function comprarCarrito (){
 	productosEnCarrito.length = 0
@@ -106,4 +137,26 @@ function comprarCarrito (){
 	
 }
 
+const GuardadEnStorage = (clave, elemento, correo) => {
+    //conseguir elementos del localStorage
+    let elementos = JSON.parse(localStorage.getItem(clave))
+
+    //comprobar si es un array
+    if(Array.isArray(elementos)){
+        //Añadir nuevo elemento
+        const existe = elementos.some(dato => dato.correo === correo)
+        if(!existe){
+        	elementos.push(elemento)
+        }
+    }else{
+        //Crear array con elemento
+        elementos = [elemento]
+    }
+
+    //guardar en localStorage
+    localStorage.setItem(clave, JSON.stringify(elementos))
+
+    //devolver objeto guardado
+    return elemento
+}
 

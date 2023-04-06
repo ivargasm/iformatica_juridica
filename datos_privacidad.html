@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+	<link rel="stylesheet" href="css/tienda.css">
+	<title>Privacidad</title>
+</head>
+<body>
+	<div class="dp bg-dp" id='dp'>
+		<div class="datos">
+			<h4>Datos personales</h4>
+			<form action="" name='datos_personales' id='datos_personales'>
+				<input type="text" name='nombre' id='nombre' placeholder="nombre">
+				<input type="text" name='correo' id='correo' placeholder="correo">
+				<input type="text" name='direccion' id='direccion' placeholder="direccion">
+				<input type="number" name='telefono' id='telefono' placeholder="telefono">
+				<div class="acciones">
+					<input type="submit" value="Eliminar" name="eliminar" id='eliminar_dp'>
+					<input type="submit" value="Actualizar" name="actualizar" id='actualizar_dp'>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="js/dp.js"></script>
+</body>
+</html>

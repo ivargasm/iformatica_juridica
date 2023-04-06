@@ -600,7 +600,12 @@ section {
 }
 
 .modal .contenedor .contenido{
-  color: #111
+  height: 100%;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
 }
 
 .modal .contenedor .contenido .ver {
