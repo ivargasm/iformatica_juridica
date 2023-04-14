@@ -63,6 +63,8 @@ function actualizarDP(e){
     console.log(datosPersonalesLS)
     localStorage.setItem('dp', JSON.stringify(datosPersonalesLS))
 
+	window.location.href = "https://raji2b.netlify.app/";
+
 }
 
 // Eliminar informacion
@@ -82,5 +84,5 @@ function eliminarDP(e) {
 
 	localStorage.setItem('dp', JSON.stringify(datosPersonalesLS))
 
-	window.location.href = "/informatica_juridica";
+	window.location.href = "https://raji2b.netlify.app/";
 }
